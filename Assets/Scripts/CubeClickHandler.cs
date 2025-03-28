@@ -11,10 +11,9 @@ public class CubeClickHandler : MonoBehaviour
         GameObject npc = GameObject.FindGameObjectWithTag("NPC"); 
         if (npc != null)
         {
-            NPCMovement npcMovement = npc.GetComponent<NPCMovement>();
-            if (npcMovement != null)
+            if (npc.TryGetComponent<NPCMovement>(out var npcMovement))
             {
-                npcMovement.ChangeTarget(alternateTarget);
+              //  npcMovement.ChangeTarget(alternateTarget);
             }
         }
     }

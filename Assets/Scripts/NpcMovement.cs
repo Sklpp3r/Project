@@ -8,10 +8,11 @@ public class NPCMovement : MonoBehaviour
     public GameObject cubePrefab;
     public Transform cubeSpawnPoint;
     private GameObject spawnedCube;
-    public GameObject infoCanvas; 
+    public GameObject infoCanvas;
 
     void Update()
     {
+        /*
         if (!hasArrived)
         {
 
@@ -62,5 +63,6 @@ public class NPCMovement : MonoBehaviour
             infoCanvas.SetActive(false); 
         }
     }
-    
+    */
+    }
 }
