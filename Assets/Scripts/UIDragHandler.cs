@@ -10,8 +10,12 @@ public class UIDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     public GameObject cardDetailsPanel;
     public RectTransform readingZone;
     public CanvasGroup cardCanvasGroup; 
+    private CardDetailsUI cardDetailsUI;
+    public CharacterCard cardscript;
+    
 
     private bool isDetailsVisible = false;
+    
 
     private void Awake()
     {
@@ -21,6 +25,11 @@ public class UIDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
        
         if (cardCanvasGroup == null)
             cardCanvasGroup = GetComponent<CanvasGroup>();
+    }
+
+    void Start()
+    {
+        cardDetailsUI = cardDetailsPanel.GetComponent<CardDetailsUI>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -46,6 +55,7 @@ public class UIDragHandler : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
                 cardCanvasGroup.blocksRaycasts = false;
 
                 cardDetailsPanel.SetActive(true);
+                cardDetailsUI.SetCharacterData(cardscript.characterData);
                 cardDetailsPanel.GetComponent<RectTransform>().localPosition = localPoint;
                 isDetailsVisible = true;
             }

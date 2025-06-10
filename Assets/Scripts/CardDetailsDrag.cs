@@ -45,6 +45,7 @@ public class CardDetailsDrag : MonoBehaviour, IBeginDragHandler, IDragHandler
             cardCanvasGroup.alpha = 1f;
             cardCanvasGroup.blocksRaycasts = true;
             card.SetActive(true);
+            card.transform.position = Input.mousePosition;
         }
     }
 }
