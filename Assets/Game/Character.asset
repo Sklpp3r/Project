@@ -10,16 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d655b78e9a86334796f4ac134d3812b, type: 3}
-  m_Name: "G\xF6kdeniz"
+  m_Name: Character
   m_EditorClassIdentifier: 
   pfbChar: {fileID: 0}
-  charSprite: {fileID: 453498288873916053, guid: c664d6d6312bbb2499e0ce010771d8a3, type: 3}
-  charName: "G\xF6kdeniz"
-  charAge: 56
-  charSurname: "\xC7oban"
-  charGender: Male
-  charBirthday: 01.12.2004
-  charNationality: "T\xFCrkiye"
+  charSprite: {fileID: 0}
+  charName: 
+  charAge: 0
   DocumentCharSprite: {fileID: 0}
   documentName: 
   documentAge: 0

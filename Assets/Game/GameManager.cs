@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
 
     public Button btnShowHouse;
     public TextMeshProUGUI txtHouseName;
+   
 
     public static GameManager Instance { get; set; }
 
@@ -37,6 +38,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetHousePanel();
+       
         StartCoroutine(MoveImage(-1400, 0));
     }
 
